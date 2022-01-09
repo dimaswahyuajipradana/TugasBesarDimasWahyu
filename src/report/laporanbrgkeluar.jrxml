@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d3f52899-d73f-4788-85de-9cdba847a110">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="71"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_detail_brg_keluar.`tanggal` AS tb_detail_brg_keluar_tanggal,
+     tb_detail_brg_keluar.`id_detail_bk` AS tb_detail_brg_keluar_id_detail_bk,
+     tb_detail_brg_keluar.`id_bk` AS tb_detail_brg_keluar_id_bk,
+     tb_detail_brg_keluar.`gudang` AS tb_detail_brg_keluar_gudang,
+     tb_detail_brg_keluar.`kode_brg` AS tb_detail_brg_keluar_kode_brg,
+     tb_detail_brg_keluar.`nama_brg` AS tb_detail_brg_keluar_nama_brg,
+     tb_detail_brg_keluar.`jumlah` AS tb_detail_brg_keluar_jumlah,
+     tb_detail_brg_keluar.`keterangan` AS tb_detail_brg_keluar_keterangan
+FROM
+     `tb_detail_brg_keluar` tb_detail_brg_keluar]]>
+	</queryString>
+	<field name="tb_detail_brg_keluar_tanggal" class="java.lang.String"/>
+	<field name="tb_detail_brg_keluar_id_detail_bk" class="java.lang.String"/>
+	<field name="tb_detail_brg_keluar_id_bk" class="java.lang.String"/>
+	<field name="tb_detail_brg_keluar_gudang" class="java.lang.String"/>
+	<field name="tb_detail_brg_keluar_kode_brg" class="java.lang.String"/>
+	<field name="tb_detail_brg_keluar_nama_brg" class="java.lang.String"/>
+	<field name="tb_detail_brg_keluar_jumlah" class="java.lang.Integer"/>
+	<field name="tb_detail_brg_keluar_keterangan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="256" y="14" width="290" height="39" uuid="a30dcf39-2556-4615-92b2-8efe57a43c0c"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT RAJAWALI NUSINDO]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="292" y="0" width="208" height="25" uuid="11f502be-99a3-443f-8d1e-13ed7dd21906"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN BARANG KELUAR]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="33" width="802" height="3" uuid="d6c522eb-7944-44f0-bbdf-55990834ee30"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="16e49412-176b-4d23-a7dd-f19e1f5d4433"/>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="2" width="100" height="20" uuid="0857f2cc-b417-41fa-82c6-b7c14811fcc1"/>
+				<text><![CDATA[ID DETAIL BK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="2" width="100" height="20" uuid="b44f7177-c1c9-47fc-b5ca-e1a8636b5ec7"/>
+				<text><![CDATA[ID BK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="2" width="100" height="20" uuid="10b9a868-51db-47e8-86aa-ba415eea68dc"/>
+				<text><![CDATA[GUDANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="2" width="100" height="20" uuid="750a70bc-f71e-4e6e-a4e3-7f63cf853aac"/>
+				<text><![CDATA[KODE BARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="2" width="100" height="20" uuid="7de7409c-c3ae-4650-940a-eb82891560c2"/>
+				<text><![CDATA[NAMA BARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="0" width="100" height="20" uuid="2be8f1c0-8d52-45fd-8a64-0fcf61b7c808"/>
+				<text><![CDATA[KETERANGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="100" height="20" uuid="3dec42cb-4256-4570-8597-135ae08d5925"/>
+				<text><![CDATA[JUMLAH]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="28" width="799" height="1" uuid="ca72cb55-f8b2-4264-9b33-07c36f9606de"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="df68f6a5-3694-4606-9ffb-356f1fd6a111"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_keluar_tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="2aa5cdd0-984b-4cbd-b3af-2d827b919967"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_keluar_id_detail_bk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="baa2f5a5-5425-45d3-bf6c-2afab06d816d"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_keluar_id_bk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="20" uuid="d8bb0b53-b154-487c-b2b2-6695eeee6dc6"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_keluar_gudang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="20" uuid="9c632f9e-3e7a-405f-be21-a747a0066f6b"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_keluar_kode_brg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="100" height="20" uuid="1f714520-e668-46ef-a4c7-a3967fe672c7"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_keluar_nama_brg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="0" width="100" height="20" uuid="1ac979f4-09be-4a26-98b4-df7ca790c6f4"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_keluar_jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="700" y="0" width="100" height="20" uuid="5bea60db-cf87-4995-8061-557c720d7336"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_keluar_keterangan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7162b43b-890f-48b6-8694-edb2cdd8d294">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_detail_brg_masuk.`tanggal` AS tb_detail_brg_masuk_tanggal,
+     tb_detail_brg_masuk.`id_detail_bm` AS tb_detail_brg_masuk_id_detail_bm,
+     tb_detail_brg_masuk.`id_bm` AS tb_detail_brg_masuk_id_bm,
+     tb_detail_brg_masuk.`supplier` AS tb_detail_brg_masuk_supplier,
+     tb_detail_brg_masuk.`kode_brg` AS tb_detail_brg_masuk_kode_brg,
+     tb_detail_brg_masuk.`nama_brg` AS tb_detail_brg_masuk_nama_brg,
+     tb_detail_brg_masuk.`jumlah` AS tb_detail_brg_masuk_jumlah,
+     tb_detail_brg_masuk.`keterangan` AS tb_detail_brg_masuk_keterangan
+FROM
+     `tb_detail_brg_masuk` tb_detail_brg_masuk]]>
+	</queryString>
+	<field name="tb_detail_brg_masuk_tanggal" class="java.lang.String"/>
+	<field name="tb_detail_brg_masuk_id_detail_bm" class="java.lang.String"/>
+	<field name="tb_detail_brg_masuk_id_bm" class="java.lang.String"/>
+	<field name="tb_detail_brg_masuk_supplier" class="java.lang.String"/>
+	<field name="tb_detail_brg_masuk_kode_brg" class="java.lang.String"/>
+	<field name="tb_detail_brg_masuk_nama_brg" class="java.lang.String"/>
+	<field name="tb_detail_brg_masuk_jumlah" class="java.lang.Integer"/>
+	<field name="tb_detail_brg_masuk_keterangan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="245" y="18" width="292" height="42" uuid="c033bc64-aa98-46a8-b419-5c6541f1dafc"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT RAJAWALI NUSINDO]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="34" width="799" height="7" uuid="6bf0b5ee-40a0-4f8e-b879-f177d1cd04d0"/>
+			</line>
+			<staticText>
+				<reportElement x="304" y="6" width="194" height="29" uuid="c081a8a8-8a61-4596-aaeb-29741e4a846f"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN BARANG MASUK]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="edd4bf21-3b2a-4552-a3bf-7f9149c36ee1"/>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20" uuid="06b93321-8abe-4d40-9836-7273d191a5a7"/>
+				<text><![CDATA[ID DETAIL BM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="20" uuid="f1b66053-5f2f-4f0b-ab60-9ce34b57dcf1"/>
+				<text><![CDATA[ID BM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="20" uuid="694cdaeb-6b5a-4092-94de-19dc6e033e12"/>
+				<text><![CDATA[PRINCIPAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="20" uuid="a9e0beee-542a-4dd1-a5ce-79f1af6896d4"/>
+				<text><![CDATA[KODE BARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="20" uuid="9878e966-ee7e-4f87-b3c4-d800ab17eef8"/>
+				<text><![CDATA[NAMA BARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="100" height="20" uuid="90a2c187-2b30-4d86-8dee-55b45e118789"/>
+				<text><![CDATA[JUMLAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="699" y="0" width="100" height="20" uuid="27e76e07-8633-40aa-b987-d868c5f16cfc"/>
+				<text><![CDATA[KETERANGAN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="799" height="5" uuid="41858ae9-ff8f-44dd-8708-569c452cad41"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="509a8207-6510-4902-9bba-423269228d42"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_masuk_tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="4f3c8a9e-ccf3-488b-9fa8-8e9f54d39ca6"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_masuk_id_detail_bm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="d032611f-cc44-4d13-8530-f5cc97e530ca"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_masuk_id_bm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="20" uuid="7780ca38-bfda-49f5-b60b-a4e48c80726d"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_masuk_supplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="20" uuid="a51cec72-19e2-4af3-8410-bbed358cbb5a"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_masuk_kode_brg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="499" y="0" width="100" height="20" uuid="4dc2ad8d-26f0-4295-8735-e3f0b172e87c"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_masuk_nama_brg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="599" y="0" width="100" height="20" uuid="2e43102b-223b-46cf-b2cf-61e8f3ae0bf9"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_masuk_jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="699" y="0" width="100" height="20" uuid="a7df6e9f-4552-4de8-b9cc-adcdac6aacec"/>
+				<textFieldExpression><![CDATA[$F{tb_detail_brg_masuk_keterangan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
